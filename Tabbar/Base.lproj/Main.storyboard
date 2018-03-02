@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5ak-58-j70">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--热点-->
+        <scene sceneID="9Os-MS-Oo0">
+            <objects>
+                <viewController id="yBS-nr-CxL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qyf-vC-NH3"/>
+                        <viewControllerLayoutGuide type="bottom" id="j21-UI-3iV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KPi-ke-ara">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="热点" image="tab_poster_hotpoint_n" selectedImage="tab_poster_hotpoint_p" id="Snu-Yn-uAx" customClass="YSHTabBarItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82N-es-vS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-805" y="144"/>
+        </scene>
+        <!--生活-->
+        <scene sceneID="k0v-SW-m9A">
+            <objects>
+                <viewController id="nJa-Gm-fyn" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EDq-eL-IRc"/>
+                        <viewControllerLayoutGuide type="bottom" id="jDN-fZ-lPg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NYD-Mt-YEs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDZ-cg-hs3">
+                                <rect key="frame" x="181" y="265" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clicke:" destination="nJa-Gm-fyn" eventType="touchUpInside" id="CFW-AI-Nan"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="生活" image="tab_poster_find_n" selectedImage="tab_poster_find_p" id="oVH-4g-Ue9" customClass="YSHTabBarItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TFR-2M-icv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-805" y="-520"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ks4-XI-klc">
+            <objects>
+                <tabBarController id="5ak-58-j70" customClass="TTViewController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U3Y-Iq-57t" customClass="YSHTabbar">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cMi-Nf-VBk" kind="relationship" relationship="viewControllers" id="rg1-cn-JKE"/>
+                        <segue destination="nJa-Gm-fyn" kind="relationship" relationship="viewControllers" id="P6b-Ec-evh"/>
+                        <segue destination="yBS-nr-CxL" kind="relationship" relationship="viewControllers" id="IsP-VT-imP"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="SLO-WV-dce"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Vr-QF-iI0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1871" y="-214"/>
+        </scene>
+        <!--VIP会员-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bhX-eh-28c"/>
+                        <viewControllerLayoutGuide type="bottom" id="5GZ-do-gbh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWe-c5-iaK">
+                                <rect key="frame" x="164" y="311" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clicke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndB-ne-6Uj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="3" title="VIP会员" image="tab_poster_vip_n" selectedImage="tab_poster_vip_p" id="PJQ-c5-qIk" customClass="YSHTabBarItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-806" y="790"/>
+        </scene>
+        <!--视频-->
+        <scene sceneID="p5C-7I-NZi">
+            <objects>
+                <viewController id="cMi-Nf-VBk" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E7d-9e-Szn"/>
+                        <viewControllerLayoutGuide type="bottom" id="mUm-BY-zYQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tWQ-2T-fvK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcb-gT-ORO">
+                                <rect key="frame" x="164" y="311" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clicke:" destination="cMi-Nf-VBk" eventType="touchUpInside" id="rGq-JA-HKx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="视频" image="tab_poster_rec_n" selectedImage="tab_poster_rec_p" id="6Fp-MI-m5X" customClass="YSHTabBarItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAU-uX-EZH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1908" y="668"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_poster_find_n" width="64" height="34"/>
+        <image name="tab_poster_find_p" width="64" height="34"/>
+        <image name="tab_poster_hotpoint_n" width="64" height="34"/>
+        <image name="tab_poster_hotpoint_p" width="64" height="34"/>
+        <image name="tab_poster_rec_n" width="64" height="34"/>
+        <image name="tab_poster_rec_p" width="64" height="34"/>
+        <image name="tab_poster_vip_n" width="64" height="34"/>
+        <image name="tab_poster_vip_p" width="64" height="34"/>
+    </resources>
+</document>
